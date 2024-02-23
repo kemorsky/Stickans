@@ -1,0 +1,232 @@
+:root {
+    --footer-color: #C8C8C8;
+    --secondary-color: #DBD9D2;
+    --item-availability-color: #009D17;
+    --item-unavailability-color : #FF2B2B;
+    --rent-btn-color: #FF9900;
+    --background-color: #FCF8FB;
+    }
+
+.searchbar-container {
+    grid-area: searchbar-container;
+    width: 333px;
+    height: 44px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-left: 5px;
+    margin-top: 20px;
+
+    .nav-icon {
+        width: 35px;
+        height: 28px;
+        color: black;
+    }
+
+    .searchbar {
+        background-color: white;
+        width: 240px;
+        height: 43px;
+        border-radius: 32px;
+        padding-left: 15px;
+        padding-right: 15px;
+        display: flex;
+        align-items: center;
+        filter: drop-shadow(0 0 0.2rem gray);
+
+        p {
+            font-size: 14px;
+            font-family: "Jost", sans-serif;
+            font-optical-sizing: auto;
+            font-weight: 400;
+            font-style: normal;
+            margin-right: auto;
+        }
+
+        .microphone-icon {
+            margin-left: auto;
+        }
+    }
+}
+
+h2 {
+    grid-area: h2;
+    font-size: 22px;
+    margin-right: auto;
+    margin-left: 1rem;
+    font-family: "Space Grotesk", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+    text-decoration-line: underline;
+    padding: 0.5rem;
+}
+
+.sort_btn {
+    grid-area: sort-btn;
+    width: 95px;
+    height: 35px;
+    color: white;
+    border: none;
+    border-radius: 15px;
+    background-color: #692340;
+    font-size: 12px;
+    margin:0 auto;
+    display: block;
+    position: relative;
+    top: 30%;
+}
+
+.filter_btns {
+    grid-area: filter-btns;
+    width: 245px;
+    height: 48px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin-left: auto;
+    margin-right: 35px;    
+
+    .tools_btn, .eltools_btn, .maskiner_btn {
+        border-radius: 15px;
+        border: none;
+        height: 35px;
+        font-size: 12px;
+        color: black;
+        padding: 10px;
+    }
+
+    .eltools_btn, .maskiner_btn {
+        background-color: #F9E0FA;
+    }
+}
+
+.items {
+    grid-area: items;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+    .item-container {
+        background-color: var(--secondary-color);
+        width: 175px;
+        height: 309px;
+        border-radius: 30px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        
+            .image-frame {
+                width: 155px;
+                height: 163px;
+                background-color: white;
+                border-radius: 30px;
+                
+                    .item-image {
+                        width: 142px;
+                        height: 105px;
+                        transform: translate(3%, 25%);
+                    }
+            }
+    
+        .title-bar {
+            margin-top: 18px;
+            width: 155px;
+            height: 18px;
+            display: flex;
+            align-items: center;
+            justify-content: space-around;
+    
+            .title {
+                font-size: 14px;
+                margin-right: auto;
+                font-family: "Space Grotesk", sans-serif;
+                font-optical-sizing: auto;
+                font-weight: 400;
+                font-style: normal;
+            }
+    
+            .availability-color {
+                background-color: var(--item-availability-color);
+                border-radius: 100px;
+                width: 16px;
+                height: 16px;
+              
+            }
+            
+            .fav-icon {
+                width: 20px;
+                height: 20px;
+            }
+                
+        }
+    
+        .price {
+            font-size: 14px;
+            font-family: "Jost", sans-serif;
+            font-optical-sizing: auto;
+            font-weight: 600;
+            font-style: normal;
+        }
+        
+        .rent_btn {
+            width: 64px;
+            height: 34px;
+            background-color: var(--rent-btn-color);
+            border-radius: 8px;
+            color: white;
+            border: none;
+        }
+
+}
+
+#item-1 {
+    grid-area: item1;
+    margin: auto;
+}
+
+#item-2 {
+    grid-area: item2;
+    margin: auto;
+}
+
+#item-3 {
+    grid-area: item3;
+    margin: auto;
+}
+
+#item-4 {
+    grid-area: item4;
+    margin: auto;
+}
+
+#item-2 .rent_btn {
+
+    background-color: #555555;
+    }
+
+#item-2 .availability-color {
+    background-color: var(--item-unavailability-color);
+}
+    
+
+.footer_nav {
+    grid-area: footer;
+    background-color: var(--footer-color);
+    width: 393px;
+    height: 60px;
+    border-bottom-left-radius: 20px;
+    border-bottom-right-radius: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    margin-bottom: -11px;
+
+    .svg-icon {
+        height: 29px;
+        width: 29px;
+    }
+}
+
+

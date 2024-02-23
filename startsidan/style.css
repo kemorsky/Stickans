@@ -1,0 +1,36 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    height: 100sh;
+    width: 100sw;
+    background-color: gray;
+}
+
+.wrapper {
+    width: 393px;
+    height: 939px;
+    display: grid;
+    grid-auto-rows: auto;
+    grid-template-columns: repeat(2, 50%);
+    grid-gap: 5px;
+    grid-template-areas: 
+    "searchbar-container searchbar-container"
+    "h2 sort-btn"
+    "filter-btns filter-btns"
+    "items items"
+    "items items"
+    "footer footer"
+    ;
+    margin-left: auto;
+    margin-right: auto;
+    width: 393px;
+    min-height: 852px;
+    background-color: var(--background-color);
+    border-radius: 1.2rem;
+}
+
+.items {
+    grid-area: items;
+}

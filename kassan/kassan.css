@@ -1,0 +1,46 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    height: 100sh;
+    width: 100sw;
+    background-color: gray;
+}
+
+.wrapper {
+    height: 852px;
+    width: 393px;
+    margin-left: auto;
+    margin-right: auto;
+    background-color: var(--background-color);
+    border-radius: 1.2rem;
+    display: grid;
+    grid-template-columns: 50% 50%;
+    grid-template-rows: auto;
+    grid-template-areas: 
+    ". ."
+    "return-arrow ."
+    "headline ."
+    "cart-items cart-items"
+    "data-wrapper data-wrapper"
+    "confirm-btn confirm-btn"
+    "cancel-btn cancel-btn"
+    ". ."
+    "footer footer";
+
+    .checkout-title {
+        grid-area: headline;
+        font-size: 20px;
+        font-family: "Space Grotesk", sans-serif;
+        font-weight: 450;
+        margin: auto;
+        width: 86px;
+        height: 25px;
+    }
+
+    .footer_nav {
+        margin-bottom: -40px;
+    }
+}
+

@@ -1,0 +1,58 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    height: 100sh;
+    width: 100sw;
+    background-color: gray;
+}
+
+.return-arrow {
+    margin: auto;
+    transform: translateX(-160%);
+}
+
+.wrapper {
+    height: 852px;
+    width: 393px;
+    margin-left: auto;
+    margin-right: auto;
+    background-color: var(--background-color);
+    border-radius: 1.2rem;
+    display: grid;
+    grid-template-columns: 50% 50%;
+    grid-template-rows: auto;
+    grid-template-areas: 
+    ". ."
+    "return-arrow ."
+    "headline headline"
+    "confirmation ."
+    "info-box info-box"
+    "rented-tools rented-tools"
+    ". ."
+    "back-btn start-btn"
+    ". ."
+    "footer footer";
+
+    h2 {
+        grid-area: headline;
+        font-size: 20px;
+        font-family: "Space Grotesk", sans-serif;
+        font-weight: 450;
+        margin: auto;
+    }
+
+    h3 {
+        grid-area: confirmation;
+        font-size: 15px;
+        font-family: "Space Grotesk", sans-serif;
+        font-weight: 400;
+        margin: auto;
+    }
+}
+
+.footer_nav {
+    margin-bottom: -40px;
+}
+
